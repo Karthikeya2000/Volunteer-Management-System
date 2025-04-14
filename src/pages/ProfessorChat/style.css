@@ -1,0 +1,119 @@
+
+  .app {
+    background-color: #DDD;
+    width: 800px;
+    height: 450px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.068), 0 10px 10px rgba(0, 0, 0, 0.052);
+    border-radius: 6px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .contact-list {
+    background-color: white;
+    width: 200px;
+    overflow: auto;
+  }
+  
+  .title {
+    padding: 12px;
+    margin: 0;
+    padding-bottom: 0;
+    font-size: 150%;
+  }
+  
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 12px;
+  }
+  
+  li {
+    margin: 8px 0;
+    padding: 8px 12px;
+    position: relative;
+    cursor: pointer;
+    transition: all .2s ease-out;
+  }
+  
+  li.active, li:hover {
+    background-color: #c8e3ff;
+    color: #3498db;
+    border-radius: 6px;
+  }
+  
+  .messages {
+    margin: 12px;
+    background-color: white;
+    border-radius: 6px;
+    overflow: hidden;
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .messages-history {
+    overflow: auto;
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: end;
+  }
+  
+  .message {
+    width: 100%;
+    padding: 12px;
+    padding-top: 0;
+  }
+  
+  .message:last-child {
+    padding-top: 12px;
+  }
+  
+  .message.me .message-body {
+    color: white;
+    background-color: #3498db;
+  }
+  
+  .message-body {
+    background-color: #DDD;
+    color: #333;
+    font-weight: 400;
+    display: inline-block;
+    padding: 8px 12px;
+    border-radius: 6px;
+    max-width: 423px;
+    min-width: 50px;
+    line-height: 20px;
+    text-align: initial;
+  }
+  
+  .messages-inputs {
+    display: flex;
+  }
+  
+  input[type="text"] {
+    background-color: transparent;
+    border: none;
+    padding: 12px;
+    resize: vertical;
+    flex: 1 1 auto;
+  }
+  
+  button {
+    padding: 0 12px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover i {
+    color: #3498db;
+  }
+  
+  i {
+    vertical-align: middle;
+    transition: all .2s ease-out;
+  }
+  
